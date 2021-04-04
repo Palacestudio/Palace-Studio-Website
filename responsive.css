@@ -1,0 +1,307 @@
+/* dimensioni display: https://screensiz.es/ */ 
+
+/*telefoni*/
+@media (max-width: 480px){
+  #header{border-radius: 0px;}
+  #logo{
+    width: 45%;
+    margin-left: -100%;
+  }
+  #hamburger{
+    transform: scale(2);
+  }
+  .header-content{
+    padding-right: 15px;
+  }
+  #main{
+    width: 95%;
+    margin-top: 10px;
+    border: none;
+  }
+  .button{
+    font-size: 22px;
+    padding: 12px 20px;
+  }
+  #hero{
+    height: 550px;
+    margin-top: 30px;
+  }
+  #hero1{
+    display: none;
+  }
+  #hero1-mobile{
+    background: url(../images/hero1-mobile.png) no-repeat center;
+    background-size: contain;
+    position: relative;
+    left: 3%;
+    width: 50%;
+    height: 792px;
+    transform: scale(0.9);
+    margin-right: 40px;
+  }
+  #hero2 {
+    z-index: 5;
+  }
+  /*TESTO*/
+  .sottotitoli{
+    font-size: 20px;
+    line-height: 42px;
+  }
+  .sottotitoli-slider{
+    font-size: 20px;
+    line-height: 42px;
+  }
+  .testo{
+    font-size: 17px;
+    line-height: 35px;
+  }
+  .skills{
+    font-size: 18px;
+  }
+  .testo-footer-link{
+    font-size: 17px;
+  }
+  #footer-text{
+    display: none;
+  }
+  
+  #us{
+    display: flex;
+    flex-direction: column;
+  }
+  #us-img{
+    width: 80%; 
+    height: 200px;
+    margin: 50px 0; 
+  }
+  #testo-yt{
+    font-size: 25px;
+    line-height: 45px;
+    font-weight: bold;
+  }
+  .video{
+    width: 380px; 
+    height: 210px;
+    border-radius: 25px;
+  }
+  .alborto{
+    display: none;
+  }
+  .contatti{
+    text-align: center;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .pois{
+    display: none;
+  }
+  #mini-logo{
+    width: 61px;
+    height: 63px;
+  }
+  #grandi-schermi{
+    display: none;
+  }
+  #large-dots{
+    display: none;
+  }
+  #piccoli-schermi{
+    opacity: 1;
+    display: block;
+  }
+  #small-dots{
+    display: block;
+  }
+  .doto{display: block;}
+  .mySlide{
+    padding-bottom: 10px;
+  }
+  .doto{
+    height: 19px;
+    width: 19px;
+    margin: 30px 3px;
+  }
+  #logo-footer{
+    display: none;
+  }
+  #footer{
+    width: 100%;
+  }
+  #margin-right{
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  .contatti{
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .contatti .sottotitoli{
+    text-align: center;
+  }
+  .menu{
+    opacity: 1;
+    width: 35%;
+    height: 250px;
+    flex-direction: column;
+    position:absolute;
+    right: -50%;
+    top: 75px;
+    justify-content: space-around;
+    border-radius: 10px;
+    color: rgb(105, 105, 105);
+  }
+  .space{display: flex;}
+  .activ{opacity: 1;right: 0;background-color: rgba(237, 237, 237, 0.938);}
+  .hamburger{
+    display: block;
+    width: 30px;
+    height: 22.5px;
+    position: absolute;
+    right: 30px;
+    bottom: 45px;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+    cursor: pointer;
+  }
+  .hamburger span{
+    background: #000;
+    position: absolute;
+    height: 4.5px;
+    width: 30px;
+    display: block;
+    border-radius: 4.5px;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+  }
+  .hamburger span:nth-child(1) {
+      top: 0px;
+  }
+  .hamburger span:nth-child(2) {
+      top: 9px;
+  }
+  .hamburger span:nth-child(3) {
+      top: 18px;
+  }
+  .hamburger.activo span:nth-child(1){
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  .hamburger.activo span:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.activo span:nth-child(3){
+    top:9px;
+    transform:rotate(-45deg);
+  }
+  #team{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .titolo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items:initial;
+  }
+  .icone{
+    margin: 0px 5px 10px 0;
+  }
+  #descrizione{
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+  #descrizione .tex_content{width: 100%;}
+  .pic{transform: scale(0.75);padding-top: 0;}
+}
+/*tablet*/
+@media (min-width: 481px) and (max-width: 768px){
+  #header{height: 100px;border-radius: 0px;}
+  .menu{
+    opacity: 1;
+    width: 25%;
+    height: 250px;
+    flex-direction: column;
+    position:absolute;
+    right: -25%;
+    top: 75px;
+    justify-content: space-around;
+  }
+  .space{display: flex;}
+  .activ{opacity: 1;transform: translateX(-25px);right: 0;background-color: rgba(237, 237, 237, 0.918);}
+  #descrizione .text_content .testo{display: none;}
+  .hamburger{
+    display: block;
+    width: 30px;
+    height: 22.5px;
+    position: absolute;
+    right: 30px;
+    bottom: 45px;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+    cursor: pointer;
+  }
+  .hamburger span{
+    background: #000;
+    position: absolute;
+    height: 4.5px;
+    width: 30px;
+    display: block;
+    border-radius: 4.5px;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+  }
+  .hamburger span:nth-child(1) {
+      top: 0px;
+  }
+  .hamburger span:nth-child(2) {
+      top: 9px;
+  }
+  .hamburger span:nth-child(3) {
+      top: 18px;
+  }
+  .hamburger.activo span:nth-child(1){
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  .hamburger.activo span:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.activo span:nth-child(3){
+    top:9px;
+    transform:rotate(-45deg);
+  }
+
+}
+/*laptops*/
+@media (max-width: 1024px){
+  #logo{
+    width: 125px;
+    height: 50px;
+  }
+  .alborto{
+    width: 600px;
+  }
+  .video{
+    width: 500px;
+  }
+  #us #testo{
+    width: 100%;
+  }
+  #us-img{
+    width: 450px;
+  }
+
+}
+/*desktop grandi schermi*/
+@media screen (min-width: 1025px){
+  
+}
+
+
+

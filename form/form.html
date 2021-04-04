@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Contattaci</title>
+</head>
+<body class="body">
+  <div class="header">
+    <a class="titolo">Contattaci!</a>
+  </div>
+  <div class="header">
+    <form name="formmail" class="contact-form" method="post" action="formmail.php" onsubmit="return controlloForm()">
+      <input type="hidden" name="successo" value="back-home.html">
+        
+      <label for="nome" class="sottotitoli">Cognome e Nome</label>
+      <input type="text" id="nome" name="nome" class="border-input" placeholder="Inserisci Cognome e Nome">
+        
+      <label for="email" class="sottotitoli">Email</label>
+      <input type="text" id="email" name="email" class="border-input" placeholder="Indirizzo di posta elettronica">
+        
+      <label for="tel" class="sottotitoli">Telefono</label>
+      <input type="text" id="tel" name="tel" class="border-input" placeholder="Numero di telefono">
+        
+      <label for="msg" class="sottotitoli">Messaggio</label>
+      <textarea id="msg" name="msg" placeholder="Scrivi il tuo messaggio" class="border-input" ></textarea>
+
+      <input type="submit" value="Invia">
+    </form>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script> 
+  <script>
+    const body = document.querySelector('.body');
+    for( var i = 0; i<= 0; i++){
+      const pois = document.createElement('div');
+      pois.classList.add('pois');
+      body.appendChild(pois);
+    }
+
+    /*function animatePois(){
+      anime({
+        targets: '.pois',
+        translateX: function(){
+          return anime.random(0,700);
+        },
+        translateY: function(){
+          return anime.random(0,500);
+        },
+        easing: 'linear',
+        duration: 5000,
+        complete: animatePois,
+      })
+    }
+    animatePois();*/
+  </script>
+</body>
+</html> 
